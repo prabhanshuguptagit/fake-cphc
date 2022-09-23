@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   post "/condition/:diagnosis_id/individual/:individual_id/program/1/examination/:screening_id/diagnosis", to: "cphc#index"
   post "/condition/:diagnosis_id/individual/:individual_id/examination/:screening_id/facility/:facility_type_id/diagnosis", to: "cphc#index"
   post "/condition/:diagnosis_id/individual/:individual_id/program/1/examination/:screening_id/treatment", to: "cphc#index"
+
+  get "/condition/:diagnosis_id/individual/:individual_id/program/1/examination/:screening_id", to: "cphc#index"
+  get "/condition/:diagnosis_id/individual/:individual_id/examination/:screening_id/facility/:facility_type_id", to: "cphc#index"
+  get "/condition/:diagnosis_id/individual/:individual_id/program/1/examination/:screening_id/diagnosis", to: "cphc#index"
+  get "/condition/:diagnosis_id/individual/:individual_id/examination/:screening_id/facility/:facility_type_id/diagnosis", to: "cphc#index"
+  get "/condition/:diagnosis_id/individual/:individual_id/program/1/examination/:screening_id/treatment", to: "cphc#index"
 end
